@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car World</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            background-color:#111;
+            color:white;
+        }
+
+        header{
+            background:black;
+            padding:20px;
+            text-align:center;
+        }
+
+        header h1{
+            font-size:50px;
+            color:#ff3c00;
+        }
+
+        nav{
+            margin-top:10px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:0 15px;
+            font-size:18px;
+        }
+
+        .hero{
+            text-align:center;
+            padding:40px;
+        }
+
+        .hero img{
+            width:80%;
+            border-radius:15px;
+            box-shadow:0px 0px 15px rgba(255,255,255,0.3);
+        }
+
+        .hero h2{
+            margin-top:25px;
+            font-size:40px;
+            color:#ff3c00;
+        }
+
+        .hero p{
+            margin-top:15px;
+            font-size:20px;
+            color:#ddd;
+        }
+
+        .cars{
+            display:flex;
+            justify-content:center;
+            gap:25px;
+            flex-wrap:wrap;
+            padding:40px;
+        }
+
+        .card{
+            background:#1c1c1c;
+            width:300px;
+            border-radius:15px;
+            overflow:hidden;
+            box-shadow:0px 0px 10px rgba(255,255,255,0.2);
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:scale(1.05);
+        }
+
+        .card img{
+            width:100%;
+            height:200px;
+            object-fit:cover;
+        }
+
+        .card h3{
+            padding:15px;
+            color:#ff3c00;
+        }
+
+        .card p{
+            padding:0 15px 20px;
+            color:#ccc;
+        }
+
+        footer{
+            background:black;
+            text-align:center;
+            padding:20px;
+            margin-top:30px;
+            color:#aaa;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Car World</h1>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Sports Cars</a>
+            <a href="#">Luxury Cars</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+
+        <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1400&q=80">
+
+        <h2>Welcome to Car World</h2>
+
+        <p>Explore Luxury, Sports and Super Cars</p>
+
+    </section>
+
+    <section class="cars">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80">
+
+            <h3>Lamborghini</h3>
+
+            <p>Experience extreme speed and luxury.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?auto=format&fit=crop&w=800&q=80">
+
+            <h3>Ferrari</h3>
+
+            <p>Italian engineering with ultimate performance.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=800&q=80">
+
+            <h3>Bugatti</h3>
+
+            <p>Designed for unmatched power and elegance.</p>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>© 2026 Car World | AWS S3 Static Website Hosting</p>
+    </footer>
+
+</body>
+</html>
